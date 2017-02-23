@@ -35,8 +35,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                	<span class="glyphicon glyphicon-fire"></span>
-                	PFBR
+                    <span class="glyphicon glyphicon-fire"></span> PFBR
                 </a>
             </div>
             <!-- Navbar links -->
@@ -49,44 +48,67 @@
                         <a href="https://github.com/edgard/paywall-filters-br/issues">Problemas</a>
                     </li>
                     <li>
-                        <a href="#contact">Contato</a>
+                        <a href="#disqus_thread">Discussão</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/edgard/paywall-filters-br">GitHub</a>
                     </li>
                 </ul>
 
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container -->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
     </nav>
 
-	<!-- Header -->
+    <!-- Header -->
     <header>
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>Paywall Filters BR</h1>
                 <p>Lista de filtros de paywall para sites Brasileiros</p>
-                <a href="abp:subscribe?location=https%3A//raw.githubusercontent.com/edgard/paywall-filters-br/master/filter.txt&title=Paywall%20Filters%20BR" class="btn btn-primary btn-lg">Instalar</a>
+                <p><a href="abp:subscribe?location=https%3A//raw.githubusercontent.com/edgard/paywall-filters-br/master/filter.txt&title=Paywall%20Filters%20BR" class="btn btn-primary btn-lg">Instalar</a></p>
+                <p>Sites suportados:
+                    <br/>ClickRBS
+                    <br/>Correio Popular
+                    <br/>Diário Catarinense (RBS)
+                    <br/>Estadão
+                    <br/>Folha de S.Paulo
+                    <br/>Gazeta do Povo
+                    <br/>Jornal de Santa Catarina (RBS)
+                    <br/>O Estado do Maranhão
+                    <br/>O Globo
+                    <br/>Zero Hora (RBS)
+                </p>
             </div>
         </div>
     </header>
 
-	<!-- Footer -->
+    <!-- Footer -->
     <footer class="page-footer">
-
-    	<!-- Contact Us -->
-        <div class="contact">
-        	<div class="container">
-                <a name="contact"></a>
-				<h2 class="section-heading">Contato</h2>
-				<p><span class="glyphicon glyphicon-user"></span><br> castro@edgard.org</p>
-        	</div>
-        </div>
+        <!-- Disqus -->
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function() {
+                this.page.url = "http://edgard.org/projects/pfbr/";
+                this.page.identifier = "pfbr";
+            };
+            (function() {
+                var d = document,
+                    s = d.createElement('script');
+                s.src = '//pfbr.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
         <!-- Copyright etc -->
         <div class="small-print">
-        	<div class="container">
-        		<p><a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons — CC0 1.0 Universal</p>
-        	</div>
+            <div class="container">
+                <p><a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons — CC0 1.0 Universal</a></p>
+            </div>
         </div>
-
     </footer>
 
     <!-- jQuery -->
