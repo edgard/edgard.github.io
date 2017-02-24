@@ -45,10 +45,13 @@
                         <a href="abp:subscribe?location=https%3A//raw.githubusercontent.com/edgard/paywall-filters-br/master/filter.txt&title=Paywall%20Filters%20BR">Instalar</a>
                     </li>
                     <li>
+                        <a href="#disqus_thread">Discussão</a>
+                    </li>
+                    <li>
                         <a href="https://github.com/edgard/paywall-filters-br/issues">Problemas</a>
                     </li>
                     <li>
-                        <a href="#disqus_thread">Discussão</a>
+                        <a href="https://github.com/edgard/paywall-filters-br/issues/new">Contato</a>
                     </li>
                     <li>
                         <a href="https://github.com/edgard/paywall-filters-br">GitHub</a>
@@ -80,6 +83,7 @@
                     <br/>O Globo
                     <br/>Zero Hora (RBS)
                 </p>
+                <p>Se você é responsável por algum dos sites acima e deseja removê-lo dessa lista, entre em <a href="https://github.com/edgard/paywall-filters-br/issues/new">contato</a>.</p>
             </div>
         </div>
     </header>
@@ -87,28 +91,29 @@
     <!-- Footer -->
     <footer class="page-footer">
         <!-- Disqus -->
-        <div id="disqus_thread"></div>
-        <script>
-            var disqus_config = function() {
-                this.page.url = "http://edgard.org/projects/pfbr/";
-                this.page.identifier = "pfbr";
-            };
-            (function() {
-                var d = document,
-                    s = d.createElement('script');
-                s.src = '//pfbr.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-        <!-- Copyright etc -->
-        <div class="small-print">
-            <div class="container">
-                <p><a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons — CC0 1.0 Universal</a></p>
-            </div>
+        <div id="disqus_thread">
+          <script>
+              var disqus_config = function() {
+                  this.page.url = "http://edgard.org/projects/pfbr/";
+                  this.page.identifier = "pfbr";
+              };
+              (function() {
+                  var d = document,
+                      s = d.createElement('script');
+                  s.src = '//pfbr.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
         </div>
+
+          <!-- Copyright etc -->
+          <div class="small-print">
+              <div class="container">
+                  <p><a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons — CC0 1.0 Universal</a></p>
+              </div>
+          </div>
     </footer>
 
     <!-- jQuery -->
